@@ -1,17 +1,27 @@
 {
-  "name": "snowflakeid",
-  "version": "1.0.0",
+  "name": "node-snowflake-id",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "keywords": [
+    "id",
+    "snowflake",
+    "snowflakeid",
+    "node-snowflake",
+    "node-id"
+  ],
+  "main": "dist/SnowflakeID.umd.js",
   "scripts": {
     "build:esm": "rollup --config rollup.config.esm.js",
     "build:cjs": "rollup --config rollup.config.cjs.js",
     "build:umd": "rollup --config rollup.config.umd.js",
     "dev": "rollup --config --watch",
-    "clean": "rimraf ./dist",
-    "publish": "npm run clean && npm publish"
+    "clean": "rimraf ./dist"
   },
-  "author": "",
+  "author": "小小荧",
+  "homepage": "https://github.com/xfy196/SnowflakeID",
+  "repository": {
+    "url": "https://github.com/xfy196/SnowflakeID"
+  },
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^16.11.11",
