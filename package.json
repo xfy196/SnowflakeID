@@ -1,0 +1,25 @@
+{
+  "name": "snowflakeid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:esm": "rollup --config rollup.config.esm.js",
+    "build:cjs": "rollup --config rollup.config.cjs.js",
+    "build:umd": "rollup --config rollup.config.umd.js",
+    "dev": "rollup --config --watch",
+    "clean": "rimraf ./dist",
+    "publish": "npm run clean && npm publish"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.60.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.31.1",
+    "typescript": "^4.5.2"
+  }
+}
